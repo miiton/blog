@@ -37,6 +37,7 @@ class Layout extends React.Component {
         <h3
           style={{
             marginTop: 0,
+            fontFamily: `'Ubuntu Mono', monospace`,
           }}
         >
           <Link

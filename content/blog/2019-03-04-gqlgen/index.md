@@ -165,8 +165,11 @@ query {
 [ページネーション](https://graphql.github.io/learn/pagination/) の実装を考えての
 記述になっています。
 
-`edges` に実態を入れます。`edges` という名前は決まりじゃなくて慣例です。
+`edges` に実体を入れます。`edges` という名前は決まりじゃなくて慣例です。
 GitHubのGraphQLもこうなっていますね。
+
+EdgeとNodeについては [GraphQL入門 \- 使いたくなるGraphQL \- Qiita](https://qiita.com/bananaumai/items/3eb77a67102f53e8a1ad)
+が解りやすかったです。ありがとうございます。
 
 gqlgen の init します。 `scripts/gqlgen.go` ってなんだよっていう場合は
 [Getting Started](https://gqlgen.com/getting-started/) を参照してください。
@@ -240,7 +243,7 @@ func DataloaderMiddleware(db *sqlx.DB, next http.Handler) http.Handler {
 				var details []model.Detail
 
 				// NOTE: keys分のデータ(= maxBatch = 最大100件)を取得する
-        // NOTE: ここはsqlxの力で記述を省力化!!
+				// NOTE: ここはsqlxの力で記述を省力化!!
 				query, args, err := sqlx.In("SELECT * FROM detail WHERE sale_id IN (?);", keys)
 				query = db.Rebind(query)
 				if err != nil {
