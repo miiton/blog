@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://tmnm.tech/`,
     social: {
       twitter: `miiton`,
+      github: `miiton`,
     },
   },
   plugins: [
@@ -50,7 +51,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-79745254-1",
+        trackingId: 'UA-79745254-1',
       },
     },
     `gatsby-plugin-feed`,

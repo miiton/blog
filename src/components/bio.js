@@ -40,9 +40,12 @@ function Bio() {
             <p>
               Written by
               {` `}
-              <strong>
-                <a href={`https://twitter.com/${social.twitter}`}>{author}</a>
-              </strong>
+              <strong>{author}</strong>
+              {` `}({` `}
+              <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>
+              {` `}/{` `}
+              <a href={`https://github.com/${social.github}`}>GitHub</a>
+              {` `}){` `}
             </p>
           </div>
         )

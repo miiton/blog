@@ -14,10 +14,10 @@ class Layout extends React.Component {
       header = (
         <h1
           style={{
-            ...scale(1.5),
+            ...scale(1.4),
             marginBottom: rhythm(1.5),
             marginTop: 0,
-            fontFamily: `'Ubuntu Mono', monospace`,
+            fontFamily: `Futura, 'Century Gothic', sans-serif`,
           }}
         >
           <Link
@@ -37,7 +37,7 @@ class Layout extends React.Component {
         <h3
           style={{
             marginTop: 0,
-            fontFamily: `'Ubuntu Mono', monospace`,
+            fontFamily: `Futura, 'Century Gothic', sans-serif`,
           }}
         >
           <Link
