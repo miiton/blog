@@ -17,7 +17,7 @@ class Layout extends React.Component {
             ...scale(1.4),
             marginBottom: rhythm(1.5),
             marginTop: 0,
-            fontFamily: `Futura, 'Century Gothic', sans-serif`,
+            fontFamily: `Avenir, Futura, 'Century Gothic', sans-serif`,
           }}
         >
           <Link
@@ -37,7 +37,7 @@ class Layout extends React.Component {
         <h3
           style={{
             marginTop: 0,
-            fontFamily: `Futura, 'Century Gothic', sans-serif`,
+            fontFamily: `Avenir, Futura, 'Century Gothic', sans-serif`,
           }}
         >
           <Link
